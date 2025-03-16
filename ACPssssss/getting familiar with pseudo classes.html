@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting familiar with psuedo classes</title>
+        <style>
+            input[type=text]{
+                border:2px solid aqua;
+            }
+            ul>li{
+                color:chartreuse;
+            }
+            h3+p{
+                color:burlywood;
+                font-size: 30px;
+            }
+            a:hover{
+                color:gold;
+                font-size:40px;
+                }
+                li:nth-child(2){
+                    background-color:tomato
+                }
+                ul li::before{
+                    content: "🤩"
+                }
+                a::after{
+                    content: "🍩"
+                }
+                p::first-letter{
+                    color:maroon;
+                    font-size:300%
+                }
+        </style>
+    </head>
+    <body>
+        <h1> Familiarity with Advance Selecors</h1>
+        Name <input type= text>
+        <ul>
+        <h2>Space travel</h2>
+        <li>Jupiter is the larest planet</li>
+        <li>Black Hole</li>
+        <li>Satellite</li>
+        </ul>
+        <h3>Familiarity with hovering</h3>
+        <p>Kidney- stores uria before taking it to the bladder</p>
+        <p>Rectum-is is used to store waste products of humans</p>
+        <a href="#">Ecretary system</a>
+
+
+    </body>
+</html>
