@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+Basic Functions
+        </title>
+    </head>
+    <body>
+        <h1>Functions</h1>
+        <button onclick = "myfunc(5);">Click me</button>
+        <div id = "res"></div>
+        <script>
+            function myfunc(x,y){
+               if (y== undefined){
+                y = 3
+               }
+               var res = x*y
+               document.getElementById("res").innerHTML= "The value is" +res
+            }
+        </script>
+    </body>
+</html>

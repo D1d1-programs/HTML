@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scope Functions</title>
+</head>
+<body>
+    <h1>Scope Functions</h1>
+    <button onclick="myfunc(5);">Click me</button>
+    <div id="res"></div>
+    <div id="res2"></div>
+
+    <script>
+        var a = 20; // global variable
+
+        function myfunc(x) {
+            var b = 200; // local variable inside function
+            var res = b * 10;
+            document.getElementById("res").innerHTML = "The result inside the function: " + res;
+        }
+
+        // Outside function execution
+        var b = 20; // define b so it works
+        document.getElementById("res2").innerHTML = "The result outside the function: " + b * 10;
+    </script>
+</body>
+</html>
