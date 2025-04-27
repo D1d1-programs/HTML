@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+                
+            }
+            h1{
+                color: cyan;
+                margin:100px;
+            }
+            #content{
+                background-color: cornflowerblue;
+                width:400px;
+                height:100px;
+                text-align: center;
+                padding:30px;
+                color:wheat;
+
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Built in objects</h1>
+        <div id = "content">
+            <div id = 'result'></div>
+            <div id = 'result1'></div>
+            <div id = 'result2'></div>
+            <div id = 'result3'></div>
+        </div>
+
+        <script>
+            var a = Math.abs(-20)
+            document.getElementById("result").innerHTML= "the absolute value of -20 is" +a
+            var s = Math.asin(1)
+            document.getElementById("result1").innerHTML= "the aSine value of 1 is" +s
+            var c = Math.acos(-1)
+            document.getElementById("result2").innerHTML= "the aCos value of -1 is" +c
+            var t = Math.atan(-1)
+            document.getElementById("result3").innerHTML= "the atan value of -1 is" +t
+        </script>
+    </body>
+</html>

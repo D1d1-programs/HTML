@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h1>Argument in Objects</h1>
+            <div id = "content">
+
+
+
+            </div>
+
+            <script>
+
+                function findmax(a) {
+
+                    max = 0
+                    for (var i = 0;i <arguments.length;i++) {
+                        if (argument[i]>max) {
+                            max = arguments[i]
+                                }
+
+
+                    }
+                    return max
+                }
+                document.getElementById("content").innerHTML= "the maximum number is"+findmax(12,34,1,45,26,74,764,123,675,34,57)
+            </script>
+        </body>
+    </html>
