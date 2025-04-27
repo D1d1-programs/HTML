@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Arguments in Objects</title>
+    </head>
+    <body>
+        <h1>Learning Arguments in Objects</h1>
+        <div id="content"></div>
+
+        <script>
+            function findsum() {
+                 sum = 0;
+                for (var i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+
+            
+            document.getElementById("content").innerHTML = "The sum of the numbers is " + findsum(12, 34, 1, 45, 26, 74, 764, 123, 675, 34, 57);
+        </script>
+    </body>
+</html>
