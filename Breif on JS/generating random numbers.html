@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    body{
+    background-color: palegreen;
+    text-align: center;
+   }  
+   h1{
+    color: blueviolet;
+   }
+   .disp{
+    background-color: wheat;
+    color: rebeccapurple;
+    padding: 20px;
+    border: 10px solid rebeccapurple;
+   }
+   
+        </style>
+
+    <body>
+<h1>Numbers from 1 to 10</h1>
+<div class = "disp">
+    <div id = "res"></div>
+
+
+</div>
+
+        <script>
+            var i = 1;
+            var num = ""
+            while ( i < 11)
+        {
+            num = num + i  + "<br>"
+            i++
+        }
+        document.getElementById("res").innerHTML = num
+        </script>
+    </body>
+
+    </head>
+</html>

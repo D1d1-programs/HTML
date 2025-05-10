@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <style>
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+   }  
+   h1{
+    color: red;
+   }
+   .disp{
+    background-color: teal;
+    color: navy;
+    padding: 20px;
+    border: 10px solid navy;
+   }
+   
+        </style>
+       </style>
+           
+                
+                
+        <body>
+            <h1>Wishes</h1>
+            <div class = "disp">
+                <div id = "res"></div>
+                <div id = "res1"></div>
+                <div id = "res2"></div>
+                <div id = "res3"></div>
+                <div id = "res4"></div>
+                </div>     
+            
+                <script>
+                    var dt = new Date()
+                    var hr = dt.getHours()
+                    var greeting;
+                    if (hr < 10)
+                {
+                    greeting = "Good Morning !!!"
+                }
+                else if (hr <19)
+                {
+                    greeting = "Good day!!!"
+                }
+                else {
+                    greeting = "Good Evening!!!"
+                }
+                document.getElementById("res").innerHTML = "The current hour is " +hr
+                document.getElementById("res1").innerHTML = greeting
+                         </script>
+        </body>
+    </head>
+    </html>

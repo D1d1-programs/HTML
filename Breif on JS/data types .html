@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+   body{
+    background-color: palevioletred;
+    text-align: center;
+   }  
+   h1{
+    color: navy;
+   }
+   .disp{
+    background-color: burlywood;
+    color: purple;
+    padding: 20px;
+    border: 10px solid purple;
+   }
+   
+        </style>
+    </head>
+    <body>
+        <h1> Declaring different type of variables </h1>
+        <div class = "disp">
+        <div id = "res"></div>
+        <div id = "res1"></div>
+        <div id = "res2"></div>
+        <div id = "res3"></div>
+        <div id = "res4"></div>
+        </div>
+
+    <script>
+        var a = 10;
+        var b = 12;
+        var c = "Javasript"
+        var d = null
+        var e
+        document.getElementById("res").innerHTML = "The type of a is " +typeof(a)
+        document.getElementById("res1").innerHTML = "The a and b are equal? " +(a==b)
+        document.getElementById("res2").innerHTML = "The type of c is " +typeof(c)
+        document.getElementById("res3").innerHTML = "The value of d is " +d
+        document.getElementById("res4").innerHTML = "The value of e is " +e
+
+        
+    </script>
+    </body>
+</html>
