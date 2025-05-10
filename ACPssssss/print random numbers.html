@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+             background-color: paleturquoise;
+             text-align: center;
+            }  
+            h1{
+             color: darkred;
+            }
+            .disp{
+             background-color: lightcoral;
+             color: lawngreen;
+             padding: 20px;
+             border: 10px solid lawngreen;
+            }
+            
+                 </style>
+        </head>
+            <body>
+                <h1> Generate Random numbers </h1>
+                <div class = "disp">
+                    <div id = "res"></div>
+                <button onclick = "generate ()"> Click to generate random </button>
+                <p id = "myid"></p>
+                <script>
+                    function generate()
+                    {
+                        var i = 0;
+                        var s = "";
+                        var temp = 0
+                        while(i <= 10)
+                        {
+                            temp = Math.round(Math.random() * 100)
+                            s = s + temp + "<br>"
+                            i++
+                        }
+                        document.getElementById("myid").innerHTML = s
+                    }
+                           
+</script>
+</body>
+    </html>
