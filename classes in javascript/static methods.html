@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Static methods</title>    
+    </head>
+    <body>
+        <h1>Class in JS</h1>
+        <div id = "res"></div>
+        <div id = "res1"></div>
+        <script>
+            class greeting
+            {
+                wish(){
+                    document.write("wishing you a great day " )
+                }
+                static hello(){
+                    document.write( "hello world!!")
+                }
+            }
+            g1 = new greeting()
+            g1.wish()
+            // g1.hello()
+            greeting.hello()
+            </script>
+    </body>
+</html>
