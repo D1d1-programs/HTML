@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Classes :) </title>
+    </head>
+    <body>
+        <h1> Class in JS as after class project</h1>
+        <div id = "res"></div>
+        <div id = "res1"></div>
+        <script>
+            class student {
+                constructor(name1,year1)
+                {
+                    this.name = name1;
+                    this.year = year1;
+                    document.write(this.name)
+
+                }
+                cal_age(){
+                    var d = new Date()
+                    var yy = d.getFullYear()
+
+
+                    var age = yy - this.year
+                    return age 
+                   
+                }
+            }
+              student1 = new student ("Ella" ,2012)
+             document.getElementById("res").innerHTML = "My name is "+ student1.name
+             document.getElementById("res1").innerHTML = "My age is "+ student1.cal_age()
+
+
+            student1.cal_age()
+        </script>
+    </body>
+    </html>
