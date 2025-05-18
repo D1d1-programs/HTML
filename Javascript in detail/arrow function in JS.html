@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+</html>
+<head>
+<title>
+    Arrow function
+</title>
+</head>
+<body>
+    <h1> Arrow function</h1>
+    <div class = "disp">
+
+        <div id = "res1"></div>
+    </div>
+
+    <script>
+        try{
+            add = (a,b) => a+b
+            document.getElementById("res1").innerHTML= "34+12= "+add(34,12)
+        }
+        catch(error)
+        {
+            document.getElementById("res1").innerHTML= error.message
+        }
+    </script>
+</body>
