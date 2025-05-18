@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Map and Arrange Arrays in 
+        </title>
+      <body>  
+
+    <h1> Array sorting </h1>
+    <button onclick="asc()">ascending order </button>
+    <button onclick="desc()">descending order </button>
+    <br>
+    <div id = "res"></div>
+     <h2>Mapping</h2>
+    <!-- The result of the mathematical expression will be displayed here -->
+    <div id="mappingResult"></div>
+
+    <script>
+        var points = [23,12,45,44,35,87,11]
+        document.getElementById("res").innerHTML= points
+        function asc(){
+            points.sort(function (a,b){return a-b})
+            document.getElementById("res").innerHTML= points
+        }
+        function desc(){
+            points.sort(function (a,b){return b-a})
+            document.getElementById("res").innerHTML= points
+        }
+
+         </script>
+
+         <script>
+        
+        var a = 3;
+        var b = 30;
+        var c = 2;
+
+       
+        var result = eval("a + b - c * 2");
+        
+        
+        document.getElementById("mappingResult").innerHTML = "The result of the mapping is: " + result;
+    </script>
+
+</body>
+</html>
+      </body>
+      </head>
+      </html>
