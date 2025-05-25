@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: purple;
+                
+            }
+            h1{
+                color: burlywood;
+            }
+        </style>
+        <title>Validate API</title>
+    </head>
+    <body>
+<h1>Validate input</h1>
+
+        <input id = "age" type = "number" min = 18 max =50 required>
+        <button onclick = "check();">validate</button>
+        <div id = "res"></div>
+        <script>
+            function check(){
+                var d =document.getElementById("age")
+                if(!d.checkValidity()){
+                    document.getElementById("res").innerHTML=" Error occured" +d.validationMessage
+                }
+                else{
+                    document.getElementById("res").innerHTML= "Input requirement correct"
+                }
+            }
+        </script>
+    </body>
+</html>
