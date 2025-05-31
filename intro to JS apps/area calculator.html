@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+</head>
+<title> Area Calculator</title>
+         </head>
+         <body>
+            <h1> Area calculator</h1>
+            <script>
+                var ch = prompt("1.Rectangle /n2.Triangle /n3.Circle /n4.Parellelogram /nenter your choice")
+                var l,b,h,r;
+                var area;
+                if(ch == "1"){
+                    l = Number(prompt("enter the length"))
+                    h = Number(prompt("enter the breadth"))
+                    area = l * b;
+                    alert("the area is "+area)
+                }
+               else if(ch == "2"){
+                    b = Number(prompt("enter the Base"))
+                    h = Number(prompt("enter the Height"))
+                    area = (1/2) * b * h;
+                    alert("the area is "+area)
+                }
+                else if(ch == "3")
+                {
+                    r = Number(prompt("enter the radius"))
+                    area = 3.14*r*r;
+                    alert("the area is "+area)
+                }
+                else if(ch == "4")
+                {
+                    b = prompt("enter the Base")
+                    h = prompt("enter the Height")
+                    area = b * h;
+                    alert("the area is "+area)
+                }
+                </script>
+                 </body>
+        </html>
