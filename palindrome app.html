@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palindrome</title>
+        <style>
+            body{
+                background-color: aquamarine;
+                text-align: center;
+            }
+            h1{
+                color: navy;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 40px;
+            }
+            
+                div{
+                display: inline-block;
+                color: forestgreen;
+                font-size: 30px;
+                width: 400px;
+                height: 80px;
+                border: 2px solid mediumslateblue;
+                padding: 30px;
+                background-color: cyan;
+                border-radius: 40px;
+            }
+            div:before{
+                content: "♥︎";
+                
+                    }
+            div:after{
+                content: "♥︎"
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Palindrome</h1>
+        <div id = "res"></div>
+        <script>
+            function palindrome(mystring){
+                var input = mystring.replace(/[^A-Z0-9]/ig,"").toLowerCase()
+
+                var rev = input.split("").reverse().join("")
+                
+                if (rev == input){
+                    document.getElementById("res").innerHTML=input + " is a palindrome"
+                }
+                else{
+                    document.getElementById("res").innerHTML=input + " is not a palindrome"
+                }
+            }
+            palindrome("racecar")
+
+
+        </script>
+    </body>
+</html>
