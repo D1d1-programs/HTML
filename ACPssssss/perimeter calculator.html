@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Perimeter Calculator</title>
+</head>
+         <body>
+            <h1> Perimeter calculator</h1>
+            <script>
+                var ch = prompt("1.Rectangle \n2.Triangle \n3.Circle \n4.Parellelogram \nenter your choice")
+                var l,b,w,r;
+                var Perimeter;
+                if(ch == "1"){
+                    l = Number(prompt("enter the length"))
+                    w = Number(prompt("enter the breadth"))
+                    Perimeter = 2 * (l+w);
+                    alert("the perimeter is "+Perimeter)
+                }
+               else if(ch == "2"){
+                    a = Number(prompt("enter the Side"))
+                    b = Number(prompt("enter the Side"))
+                    c = Number(prompt("enter the Side"))
+                   Perimeter = a + b + c;
+                    alert("the perimeter is "+Perimeter)
+                }
+                else if(ch == "3")
+                {
+                    r = Number(prompt("enter the radius"))
+                    Perimeter = 2 * 3.14 * r;
+                    alert("the perimeter is "+Perimeter)
+                }
+                else if(ch == "4")
+                {
+                    a = prompt("enter the Side")
+                    b = prompt("enter the Side")
+                    Perimeter = 2 * (a+b);
+                    alert("the perimeter is "+Perimeter)
+                }
+                </script>
+                 </body>
+        </html>
