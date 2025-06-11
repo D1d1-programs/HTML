@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: sandybrown;
+            
+        }
+        h1 {
+            color: fuchsia;
+        }
+    </style>
+    <title>Asynchronous</title>
+</head>
+<body>
+    <h1>JAVASCRIPT Asynchronous</h1>
+    <div id="res"></div>
+
+    <script>
+             async function subtract(a, b) {
+            let result = a - b; 
+            display(result);
+        }
+
+        function display(some) {
+            document.getElementById("res").innerHTML += some + "<br>";
+        }
+
+        subtract(10, 4);
+
+       
+    </script>
+</body>
+</html>
