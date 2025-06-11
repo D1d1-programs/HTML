@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: navajowhite;
+            }
+        </style>
+        <title>
+            JSON objects
+        </title>
+        <h1> JSON </h1>
+        <div id = "res"></div>
+        <div id = "res1"></div>
+
+        <script>
+            student = {
+                "name": "Didi" ,
+                "age" : 12
+            }
+            document.getElementById("res").innerHTML = student.name + "<br>" + student.age
+            var mjson = JSON.stringify(student)
+            var newstudent = JSON.parse(mjson)
+            document.getElementById("res1").innerHTML = newstudent.name + "<br>" + newstudent.age
+        </script>
+    </head>
+</html>

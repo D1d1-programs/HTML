@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+        <title> Callback </title>
+        </head>
+        <body>
+            <h1>Display</h1>
+      <div id = "res"></div>
+      <script>
+          function display(value) {
+            document.getElementById("res").innerHTML= 'the result is ' + value;
+          }
+          function add (a,b,mydisplay)
+           {
+            var c = a+ b
+            mydisplay(c)
+          }
+          add(239,45,display)
+      </script>
+        </body>
+</html>
