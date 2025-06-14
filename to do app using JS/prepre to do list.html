@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+To Do List App
+    </title>
+   </head>
+<body>
+    <h3> Add your list to do</h3>
+    <form id="myform">
+        <input id="myinput" type="text">
+        <button type="submit"> add</button>
+    </form>
+    <h3> to do list</h3>
+    <ul id="myitem"></ul>
+    <script>
+        var myform = document.getElementById("myform");
+        var myinput = document.getElementById("myinput");
+        var myitem = document.getElementById("myitem");
+
+        myform.addEventListener("submit", function(event) {
+            event.preventDefault();
+            var inputitems = myinput.value.trim();
+            if (inputitems !== "") {
+                var items = `<li> ${inputitems} <button onclick="dele(this)">🗑️ Delete</button></li>`;
+                myitem.insertAdjacentHTML("beforeend", items);
+                myinput.value = "";
+                myinput.focus();
+            }
+        });
+
+        function dele(element) {
+            element.parentElement.remove();
+        }
+    </script>
+</body>
+</html>
