@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Today Calendar</title>
+    <style>
+        body {
+            background-color: goldenrod;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: black; 
+            font-family: Arial, sans-serif;
+        }
+        #calendar {
+            border: 10px solid burlywood;
+            border-radius: 20px;
+            padding: 30px 40px;
+            background: rgba(0, 0, 0, 0.7);
+            color: goldenrod;
+            box-shadow: 0 0 20px goldenrod;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            width: 350px;
+        }
+        #calendar-emoji {
+            font-size: 50px;
+            margin-bottom: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="calendar">
+        <span id="calendar-emoji">📅</span>
+        <span id="calendar-date">Loading date...</span>
+    </div>
+
+    <script>
+        function showCalendar() {
+            const dt = new Date();
+
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const months = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            const dayName = days[dt.getDay()];
+            const monthName = months[dt.getMonth()];
+            const date = dt.getDate();
+            const year = dt.getFullYear();
+
+            const fullDate = `${dayName}, ${monthName} ${date}, ${year}`;
+            document.getElementById("calendar-date").textContent = fullDate;
+        }
+
+        showCalendar();
+    </script>
+</body>
+</html>
