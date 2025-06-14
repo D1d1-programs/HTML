@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter App</title>
+    <style>
+        .wrapper {
+            text-align: center;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 3em;
+            margin: 20px;
+        }
+        button {
+            font-size: 1em;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Counter App</h1>
+        <p><span id="seconds">00</span></p>
+        <button id="buttonstart">Start</button>
+        <button id="buttonstop">Stop</button>
+        <button id="buttonreset">Reset</button>
+    </div>
+
+    <script>
+     seconds = 0;
+        interval = null;
+
+     appendSeconds = document.getElementById("seconds");
+     buttonStart = document.getElementById("buttonstart");
+     buttonStop = document.getElementById("buttonstop");
+      buttonReset = document.getElementById("buttonreset");
+
+        function startTimer() {
+            seconds++;
+            appendSeconds.textContent = seconds < 10 ? "0" + seconds : seconds;
+        }
+
+        buttonStart.onclick = function () {
+            if (interval !== null) return; 
+            interval = setInterval(startTimer, 10);
+        };
+
+        buttonStop.onclick = function () {
+            clearInterval(interval);
+            interval = null;
+        };
+
+        buttonReset.onclick = function () {
+            clearInterval(interval);
+            interval = null;
+            seconds = 0;
+            appendSeconds.textContent = "00";
+        };
+
+    
+        appendSeconds.textContent = "00";
+    </script>
+</body>
+</html>
