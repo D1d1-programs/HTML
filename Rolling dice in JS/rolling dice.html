@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rolling Dice</title>
+        <style>
+            body{
+         background-color: navajowhite;
+         text-align: center;
+            }
+
+          #dice{
+            font-size: 150px;
+            color: darkcyan;
+          }
+
+           #dice:hover{
+            cursor:pointer;
+           }
+
+          h1{
+          color: navy;
+          }
+        </style>
+        </head>
+
+        <body>
+         <h1>ROLLING DICE</h1>
+            <div id = "dice" onclick = "startstop()"></div>
+            <script>
+                var diceface = ['&#9856;','&#9857;','&#9858;','&#9859;','&#9860;','&#9861;']
+                var start = true
+                var interval;
+                function change(){
+                    var r = Math.floor(Math.random()*6)
+                    document.getElementById("dice").innerHTML = diceface[r]
+                }
+                function startstop(){
+                    if (start)
+                {
+                    t = setInterval(change,500)
+                    start = false
+                }
+                else{
+                    clearInterval(t)
+                    start = true
+                }
+                }
+                window.onload=(function(){
+                    startstop()
+                })
+            </script>
+
+        </body>
+        </html>
