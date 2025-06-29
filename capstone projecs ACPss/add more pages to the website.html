@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main content</title>
+        <style>
+            body,html{
+                height: 100%;
+                margin: 0px;
+                background-color: lemonchiffon;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: chartreuse;
+            }
+            .topnav a{
+                float : right;
+                color : black;
+                font-size: 21px;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .topnav a:hover{
+                color:lavenderblush;
+                font-size: 24px;
+            }
+            .topnav a.active{
+                color: blue;
+            }
+            
+           .bg-image {
+            /* Full height */
+            height: 50%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+           }
+
+           /* Images used */
+           .img1 { background-image: url("trump.jfif"); }
+           .img2 { background-image: url("france.jfif"); }
+           .img3 { background-image: url("london.jfif"); }
+           .img4 { background-image: url("china.jfif"); }
+           .img5 { background-image: url("us.jfif"); }
+
+           /* Position text in the middle of the page/image */
+           .bg-text {
+
+            background-color: cyan;
+            color: black;
+            font-weight: bold;
+            font-size: 80px;
+            border: 10px solid forestgreen;
+            border-radius : 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+           }
+        </style>
+    </head>
+    <body>
+        <div class = "topnav">
+            <a class = "active" href = "index.html">Home</a>
+            <a  href = "content.html">Content</a>
+            <a href = "gallery.html">Gallery</a>
+            <a  href = "contact.html">Contact</a>
+        </div>
+        
+         <div class="bg-image img1"></div>
+         <div class="bg-image img2"></div>
+          <div class="bg-image img3"></div>
+           <div class="bg-image img4"></div>
+            <div class="bg-image img5"></div>
+
+            <div class="bg-text">TOUR</div>
+    </body>
+</html>
