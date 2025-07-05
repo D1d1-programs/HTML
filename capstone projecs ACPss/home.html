@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Adding more images to the slider </title>
-         <style>
+        <title>capstone project</title>
+        <style>
             body{
                 margin: 0px;
-                background-color: lemonchiffon;
+                background-color: lavender;
                 font-family: Georgia, 'Times New Roman', Times, serif;
             }
             .topnav{
                 overflow: hidden;
-                background-color: crimson;
+                background-color: palevioletred;
             }
             .topnav a{
                 float : right;
-                color : blue;
+                color : black;
                 font-size: 21px;
                 padding: 14px 16px;
                 text-decoration: none;
                 font-weight: bold;
             }
             .topnav a:hover{
-                color:whitesmoke;
+                color:coral;
                 font-size: 24px;
             }
             .topnav a.active{
-                color: navy;
+                color: purple;
             }
             .carousel-container{
                 display :flex;
                 justify-content: center;
                 align-items:center;
                 height:300px;
-                border:1px solid blue;
+                border:1px solid black;
                 border-radius: 50px;
                 width:400px;
             }
@@ -41,24 +41,35 @@
                 max-height: 100%;
                 max-width: 100%;
             }
+            .footer{
+                position:fixed;
+                bottom:0px;
+                left: 0px;
+                width: 100%;
+                background-color: crimson;
+                text-align: center;
+                color: black;
+            }
         </style>
     </head>
-
-     <body>
+    <body>
         <div class = "topnav">
             <a class = "active" href = "home.html">Home</a>
             <a  href = "content.html">Content</a>
-            <a href = "gallery.html">Gallery</a>
+            <a href = "gallery acp.html">Gallery</a>
             <a  href = "contact acp.html">Contact</a>
         </div>
-        <h1>My best players in basketball</h1>
+        <h1>My Favourite basketball team</h1>
         <div class = "carousel-container">
-            <img class = "myslides" src = "cury.jfif" width="100%" height="100%">
-             <img class = "myslides" src = "doncic.jfif" width="100%" height="100%">
-              <img class = "myslides" src = "lebron.jfif" width="100%" height="100%">
-              <img class = "myslides" src = "sga.jfif" width="100%" height="100%">
-              <img class = "myslides" src = "kyrie.jfif" width="100%" height="100%">
+            <img class = "myslides" src = "lakers.jfif" width="100%" height="100%">
+             <img class = "myslides" src = "golden.jfif" width="100%" height="100%">
+              <img class = "myslides" src = "okc.jfif" width="100%" height="100%">
         </div>
+        <div class = "footer">
+            <p>All rights reserved to Udoffa Edidiong<br>
+                Contact me at itaedidiong11@gmail.com</p>
+        </div>
+
         <script>
             var myindex = 0
 
@@ -77,8 +88,6 @@
                 setTimeout(carousel,3000)
             }
             carousel()
-
-               
             </script>
     </body>
 </html>
