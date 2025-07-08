@@ -1,0 +1,16 @@
+body{
+    margin-left: 20px;
+    font: size 20px;
+    font-weight: 400;
+    background-color: coral;
+}
+.section{
+    text-align: left;
+    padding: 50px 80px;
+    background-color: crimson;
+    color: black;
+}
+p{
+    font-size: 20px;
+    text-align: left;
+}
